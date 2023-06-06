@@ -1,0 +1,19 @@
+Algoritmo Prestamo
+	Definir CapitalPrestado, InteresAnual, tiempo, Cuota, TotalPago, Amortizacion Como Real
+	
+	Escribir "Ingrese el valor de la capital prestada:"
+	Leer CapitalPrestado
+	Escribir "Ingrese el valor del interés anual:"
+	Leer InteresAnual
+	Escribir "Ingrese la cantidad de años que dura el préstamo:"
+	Leer tiempo
+	
+	Cuota = (CapitalPrestado * InteresAnual) / (100*(1-(1+InteresAnual/100)^(-tiempo)))
+	TotalPago = Cuota * tiempo
+	Amortizacion = TotalPago - CapitalPrestado
+	
+	Escribir "La cuota a pagar es de:", Cuota
+	Escribir "El valor total pagado es igual a:", TotalPago
+	Escribir "Con una amortización de:", Amortizacion
+	
+FinAlgoritmo

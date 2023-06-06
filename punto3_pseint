@@ -1,0 +1,13 @@
+Algoritmo Conversion
+	Definir segundoss,minutos,horas Como Real
+	
+	Escribir "Ingrese su cantidad de segundos:"
+	leer segundoss
+	
+	minutos = segundoss/60
+	horas = minutos/60
+	
+	Escribir "Tus", segundoss,"segundos es igual a ", minutos,"lo cual es igual a ",horas
+	
+	
+FinAlgoritmo

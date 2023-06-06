@@ -1,14 +1,14 @@
 Algoritmo Prestamo
-	Definir CapitalPrestado, InteresAnual, tiempo, Cuota, TotalPago, Amortizacion Como Real
+	Definir CapitalPrestado, InteresMensual, tiempo, Cuota, TotalPago, Amortizacion Como Real
 	
 	Escribir "Ingrese el valor de la capital prestada:"
 	Leer CapitalPrestado
 	Escribir "Ingrese el valor del interés anual:"
-	Leer InteresAnual
+	Leer InteresMensual
 	Escribir "Ingrese la cantidad de años que dura el préstamo:"
 	Leer tiempo
 	
-	Cuota = (CapitalPrestado * InteresAnual) / (100*(1-(1+InteresAnual/100)^(-tiempo)))
+	Cuota = (CapitalPrestado * InteresMensual) / (100*(1-(1+InteresMensual/100)^(-tiempo)))
 	TotalPago = Cuota * tiempo
 	Amortizacion = TotalPago - CapitalPrestado
 	

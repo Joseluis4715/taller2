@@ -1,0 +1,36 @@
+Algoritmo Salario
+	Definir SueldoBase, CompleDestino,Cargoacademico,GanaciaHorExtra,SueldoBruto,IPRF,RetencionIPRF,SueldoNeto Como Real
+	Definir HorasExtras, hijos, mayores Como Entero
+	
+	Escribir "¿Cuál es su sueldo base?"
+	leer SueldoBase
+	Escribir "¿Cual es su complemento de destino?"
+	Leer CompleDestino
+	Escribir "¿Cual es su complemento de cargo academico?"
+	leer Cargoacademico
+	Escribir "¿Cuantas horas extras realizo?"
+	leer HorasExtras
+	Escribir "¿Cuantos hijos tienes?"
+	leer hijos 
+	Escribir "¿Cuantos mayores viven contigo?"
+	leer mayores
+	
+	GanaciaHorExtra = HorasExtras*23
+    SueldoBruto = Sueldobase+CompleDestino+CargoAcademico+GanaciaHorExtra
+    IPRF = 24-(hijos*2)-mayores
+    RetencionIPRF = SueldoBruto*(IPRF/100)
+    SueldoNeto = SueldoBruto-RetencionIPRF
+	
+	Escribir "Sueldo Base:",Sueldobase
+	Escribir "Complemento de Destino:",CompleDestino
+	Escribir "Complemento de cargo académico:",CargoAcademico
+	Escribir "Horas extras realizadas:",HorasExtras
+	Escribir "Hijos:",hijos
+	Escribir "Mayores:",mayores
+	Escribir "Cálculo de la nómina"
+	Escribir "Sueldo Bruto:", SueldoBruto
+	Escribir "Porcentaje en IPRF:",IPRF,"%"
+	Escribir "Retencion de IPRF:",RetencionIPRF
+	Escribir "Sueldo neto:",SueldoNeto
+	
+FinAlgoritmo

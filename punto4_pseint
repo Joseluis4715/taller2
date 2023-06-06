@@ -1,0 +1,18 @@
+Algoritmo Promedio
+	Definir nota1,nota2, nota3, nota4, promedionotas Como Real
+	
+	Escribir "Ingrese la califcación de su primera práctica"
+	Leer nota1
+	Escribir "Ingrese la califcación de su segunda práctica"
+	Leer nota2
+	Escribir "Ingrese la califcación de su primera actividad"
+	Leer nota3
+	Escribir "Ingrese la califcación de su segunda actividad"
+	Leer nota4
+	
+	promedionotas = (nota1+nota2+nota3+nota4)/4
+	
+	Escribir "En la convocatoria de Junio el estudiante tuvo un promedio de ",promedionotas
+	
+	
+FinAlgoritmo
